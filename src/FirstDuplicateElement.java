@@ -4,8 +4,8 @@ public class FirstDuplicateElement
 {
 	public static void main(String[] args) 
 	{
-    	  int n = 6;
-    	  int arr[] = {2, 3, 3, 1, 5, 2};
+    	  int n = 2;
+    	  int arr[] = {2, 2};
           int result = findDuplicate(arr, n);
           System.out.println(" "+ result +" ");
 	}
@@ -27,7 +27,7 @@ public class FirstDuplicateElement
 		int selected = -1;
 		int minIndex = 	arr.length;
 		for(Map.Entry<Integer,Integer> entry : second.entrySet())
-		{
+		{ 
 			if(entry.getValue() < minIndex)
 			{
 				minIndex = entry.getValue();
