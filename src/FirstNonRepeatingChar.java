@@ -22,7 +22,7 @@ public class FirstNonRepeatingChar
 {
    public static void main(String arg[])
    {
-	  String s = "abacabaabacaba";
+	  String s = "zyyx";
 	  char c = firstNonRepeatingchar(s);
 	  System.out.println(c);
    }
@@ -31,10 +31,10 @@ public class FirstNonRepeatingChar
    {
 	      int count[] = new int[26];
 	      for(int i=0; i<s.length(); i++)
-	    	  count[s.charAt(i) -97]++;
+	    	  count[s.charAt(i) -97]++; // use for store the count of each character 
 	      
 	      for(int i=0; i<s.length(); i++)
-	    	  if(count[s.charAt(i)-97] == 1)
+	    	  if(count[s.charAt(i)-97] == 1) // check if any character has one count then return it.
 	    		  return s.charAt(i);
 	      
 		  return '_';
